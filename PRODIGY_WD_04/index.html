@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0006b0e0a4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav class="navbar">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-sharp fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <span>Rishikanta Panda</span> <br>Cuttack,Odisha</h1>
+            </div>
+            <!-- <a href="#" id="wp"><img src="images/whatsapp-icon.webp" alt=""></i></a> -->
+        </div>
+    </div>
+
+    <!----------------- About---------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm an dedicated website developer on a mission to bring your online presence to life. Whether you're a small business, a startup, or an individual with a passion project, I specialize in creating websites that not only look great but also perform seamlessly.I like problem-solving and designing and editing.
+                        I am also interested in Web Development and I have developed various websites and Projects.
+                        Looking for internship opportunities and learning new things every day.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>App Development</span><br>Building Android/iOS apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>System Tron</span><br>DSA In C Internship</li>
+                            <li><span>TCS Cyber Security Program</span><br>Course certification</li>
+                            <li><span>Projects</span><br>Wit Jab Web Site</li>
+                            <li><span>2024 - Current</span><br>Internship at Prodigy Infotech</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021</span><br>SSC from ICSE Queen Mary's School,Cuttack,Odisha.</li>
+                            <li><span>2023</span><br>HSC from CHSE Ravenshaw University,Cuttack,Odisha.</li>
+                            <li><span>2023 - 2027</span><br>Pursuing B.Tech CSE from ABIT,Cuttack,Odisha.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------- Services ---------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-sharp fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus molestiae debitis harum,
+                        laboriosam delectus nam illum illo quibusdam itaque nemo.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus molestiae debitis harum,
+                        laboriosam delectus nam illum illo quibusdam itaque nemo.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus molestiae debitis harum,
+                        laboriosam delectus nam illum illo quibusdam itaque nemo.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------- Portfolio ---------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to the talented people around the world. Download it from play store.
+                        </p>
+                        <a href="https://play.google.com/store/apps/details?id=com.instagram.android" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you to the talented people around the world. Download it from play store.
+                        </p>
+                        <a href="https://play.google.com/store/apps/details?id=com.spotify.music" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The app connects you to the talented people around the world. Download it from play store.
+                        </p>
+                        <a href="https://play.google.com/store/apps/details?id=in.amazon.mShop.android.shopping" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/Radheshyam20" target="_blank" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!----------------- Contact ---------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>is21293rishikantapanda@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>7008013778</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/ramakanta.panda.9469?mibextid=ZbWKwL" target="_blank"><i class="fab fa-square-facebook"></i></a>
+                        <a href="https://www.threads.net/@___.rxsshhhiiii.___?xmt=AQGz6NtCjegM8OoHHiDbaew9wL26XiRUgpWzqjpXQ-9kE9A" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/___.rxsshhhiiii.___/?next=%2F&hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/rishikanta-panda-a2a1132ba/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Resume.png" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="" name="contactform">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Rishikanta, Made using resources available on internet</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
