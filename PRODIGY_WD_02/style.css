@@ -1,43 +1,84 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
+
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
-body{
-    background-color: rgba(0, 0, 0, 0.7);
+.container {
+    background-color: #222242;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+}
+
+.wrapper {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.wrapper p {
+    position: relative;
+    display: inline-block;
     color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    flex-direction: column;
+    z-index: 9999;
+    font-size: 48px;
+    margin-bottom: 100px; /* Reduced margin for lap times */
 }
 
-#stopwatch{
-    background-color: rgba(0, 0, 0, 0.9);
-    padding: 20px 24px;
-    border-radius: 10px;
+.wrapper p::before {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: #151538;
+    z-index: -1;
+    border-radius: 50%;
+    left: -10%;
+    top: -118%;
+    animation-name: shine;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
 
-.timerDisplay{
-    font-size: 50px;
-    font-weight: 600;
+@keyframes shine {
+    0%, 100% {
+        box-shadow: 0px 0px 32px -12px rgba(246, 180, 0, .5);
+    }
+
+    50% {
+        box-shadow: 0px 0px 32px 3px rgba(246, 180, 0, .5);
+    }
 }
 
-.buttons{
-    margin-top: 20px;
-}
-
-.btn{
-    font-size: 20px;
-    background: none;
-    border: none;
+button {
+    background-color: #222242;
+    padding: 10px 38px;
+    border: 1px solid #A9A9A9;
+    border-radius: 28px;
     color: #fff;
-    background-color: var(--clr);
-    padding: 12px 24px;
-    margin-inline: 12px;
-    border-radius: 8px;
-    cursor: pointer;
+    transition: all .2s ease;
+    outline: 0;
+}
+
+button:not(:last-child) {
+    margin-right: 20px;
+}
+
+button:hover,
+button:focus {
+    border-color: #F6B400;
+    color: #F6B400;
+    box-shadow: 0px 4px 27px -12px #F6B400;
+}
+
+.lap-times-container {
+    text-align: center;
+    margin-top: 20px;
+    color: #ffffff; /* Set color for lap times */
+    font-size: 18px; /* Adjust font size for lap times */
 }
